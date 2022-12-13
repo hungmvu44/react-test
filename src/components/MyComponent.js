@@ -2,17 +2,17 @@
 // function component
 
 import React from "react";
+import Displayinfo from "./Displayinfo";
+import UserInfo from "./Userinfo";
 class MyComponent extends React.Component {
-  // JSX
-  state = {
-    name: "Andy",
-    adddress: "Aus",
-    age: 26,
-  };
   render() {
     return (
       <div>
-        My name is {this.state.name} and I am from {this.state.adddress}
+        <UserInfo></UserInfo>
+        <br />
+        <Displayinfo name="Hung" age="30" />
+        <hr />
+        <Displayinfo name="My" age={25} />
       </div>
     );
   }
