@@ -1,15 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.sass";
+import Header from "./components/Header/Header";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1>Hello world with React and Hoi Dan IT!</h1>
-      </header>
+    <div className="app-container">
+      <Header />
     </div>
   );
-}
+};
 
 export default App;
